@@ -2,7 +2,7 @@
 
 Os alunos não precisam mexer aqui. As respostas ficam em src/respostas.py.
 """
-from src import respostas
+from src import  respostas
 
 NIVEIS = {
     1: ("Nível 1 - Aquecimento", "Uma tabela só: WHERE, COUNT, AVG, GROUP BY."),

@@ -26,6 +26,7 @@ WHERE Bairro = 'Centro';
 
 # Q2. Hambúrgueres acima de R$ 30
 # Colunas do resultado: NomeProduto, Preco
+
 Q2 = """
 SELECT NomeProduto, Preco
 FROM Produtos
@@ -35,13 +36,16 @@ ORDER BY Preco DESC;
 """
 
 # Q3. Pedidos por status
+
 # Colunas do resultado: Status, QuantidadePedidos
+
 Q3 = """
 
 """
 
 # Q4. Nota média e pedidos sem avaliação
 # Colunas do resultado: PedidosEntregues, PedidosAvaliados, PedidosSemAvaliacao, NotaMedia
+
 Q4 = """
 SELECT
 COUNT(*)                                   AS PedidosEntregues,
@@ -54,12 +58,13 @@ WHERE Status = 'Entregue';
 
 # Q5. Delivery x Retirada por mês
 # Colunas do resultado: Mes, TipoEntrega, QuantidadePedidos
+
 Q5 = """
 
 """
 
 # ---------------------------------------------------------------------
-#  NÍVEL 2 - CRUZANDO TABELAS
+# NÍVEL 2 - CRUZANDO TABELAS
 # ---------------------------------------------------------------------
 
 # Q6. Pedidos de janeiro com cliente
@@ -76,64 +81,74 @@ Q7 = """
 
 # Q8. Unidades e faturamento por produto
 # Colunas do resultado: NomeProduto, UnidadesVendidas, Faturamento
+
 Q8 = """
 
 """
 
 # Q9. Faturamento por categoria
 # Colunas do resultado: Categoria, Faturamento
+
 Q9 = """
 
 """
 
 # Q10. Bairros com 7+ pedidos entregues
 # Colunas do resultado: Bairro, PedidosEntregues
+
 Q10 = """
 
 """
 
 # Q11. Preços praticados do X-Bacon
 # Colunas do resultado: PrecoUnitario, Unidades, Faturamento
+
 Q11 = """
 
 """
 
 # ---------------------------------------------------------------------
-#  NÍVEL 3 - DESAFIO
+# NÍVEL 3 - DESAFIO
 # ---------------------------------------------------------------------
 
 # Q12. Top 3 clientes (fidelidade)
 # Colunas do resultado: Nome, Pedidos, TotalGasto
+
 Q12 = """
 
 """
 
 # Q13. Faturamento mês a mês
 # Colunas do resultado: Mes, PedidosEntregues, Faturamento
+
 Q13 = """
 
 """
 
 # Q14. Entregador do trimestre
 # Colunas do resultado: Nome, Entregas, NotaMedia
+
 Q14 = """
 
 """
 
 # Q15. Valor total dos pedidos de março
 # Colunas do resultado: IdPedido, Nome, ValorProdutos, TaxaEntrega, ValorTotal
+
 Q15 = """
 
 """
 
 # Q16. Clientes sem nenhum pedido
 # Colunas do resultado: Nome, Bairro, DataCadastro
+
 Q16 = """
 
 """
 
 # Q17. Produto que nunca foi vendido
 # Colunas do resultado: NomeProduto, Categoria, Preco
+
 Q17 = """
 
 """

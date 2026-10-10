@@ -29,7 +29,9 @@ for nivel, (titulo, descricao) in NIVEIS.items():
 
 st.subheader("As tabelas do banco")
 st.markdown(
+
     """
+
 | Tabela | O que guarda | Ligação |
 |---|---|---|
 | **Clientes** | Quem compra: nome, bairro, telefone | - |
@@ -37,6 +39,8 @@ st.markdown(
 | **Produtos** | O cardápio (`Preco` = preço **atual**) | - |
 | **Pedidos** | Cada pedido do trimestre | `IdCliente` → Clientes · `IdEntregador` → Entregadores (NULL na retirada) |
 | **ItensPedido** | O que foi comprado em cada pedido (`PrecoUnitario` = preço **no dia**) | `IdPedido` → Pedidos · `IdProduto` → Produtos |
+
 """
 )
 st.caption("Regra de ouro: pedido cancelado não é venda. Faturamento = Quantidade × PrecoUnitario de ItensPedido.")
+

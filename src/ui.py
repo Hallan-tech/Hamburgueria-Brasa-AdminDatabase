@@ -1,7 +1,7 @@
 """Monta a página de cada nível: pergunta, gráfico e tabela."""
 import streamlit as st
 
-from src.db import consultar, mensagem_erro
+from src.db import consulta, mensagem_erro
 from src.graficos import desenhar
 from src.perguntas import NIVEIS, por_nivel, resposta
 
@@ -27,9 +27,9 @@ def mostrar_pergunta(p):
             return
 
         try:
-            tabela = consultar(sql)
+            tabela = consulta(sql)
         except Exception as erro:
-            st.error("Erro ao executar a consulta: " + mensagem_erro(erro))
+            st.error("Erro ao executar a consulta: " + mensagem_erro(erro=erro))
             st.code(sql, language="sql")
             return
 
